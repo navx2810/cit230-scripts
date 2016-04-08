@@ -1,0 +1,5 @@
+files=$(ls -p | grep -v /)
+dir="directories.txt"
+echo "count: $(ls -p | grep -v / | cat | wc -l)" > $dir
+echo "files:" >> $dir
+echo $( ls -p | grep -v / | cat | tr [:space:] '\n' ) >> $dir

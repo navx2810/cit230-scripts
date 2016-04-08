@@ -1,0 +1,5 @@
+a=$0
+b=$1
+area=$(bc <<< "$a*$b")
+perimeter=$(bc <<< "$a*2+$b*2")
+echo "Length: $a, Width: $b, Area: $area, Perimeter: $perimeter"
